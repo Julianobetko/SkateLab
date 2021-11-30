@@ -1,0 +1,408 @@
+/*Comentario*/
+
+html {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-image: linear-gradient(rgb(233, 227, 227), rgb(157, 163, 162));
+    padding: 20px;
+}
+
+.degradado {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToJkDby8LhI1W53nduD8O50LXaufws5IZ3lA&usqp=CAU);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+/*Modificaciones titulo*/
+
+h1 {
+    text-align: center;
+    color: blue;
+    font-family: 'Tangerine', serif;
+    letter-spacing: 50%;
+    font-size: 2cm;
+}
+
+.paraTransicion:hover {
+    transition: 2s;
+    font-size: 90px;
+}
+
+h2 {
+    color: rgb(94, 2, 2);
+    font-family: "Ubuntu script=latin rev=2";
+    width: 100%;
+    font-weight: 700;
+    font-style: normal;
+    line-height: initial;
+    font-size: 230%;
+    position: relative;
+    left: 10px;
+}
+
+h3 {
+    text-align: center;
+}
+
+/*Class*/
+
+.boredesRedondeados {
+    position: relative;
+    border-radius: 5%;
+    margin: 5px;
+}
+
+.boredesRedondeados:hover {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(0deg);
+    }
+}
+
+.spots {
+    position: absolute;
+    left: 700px;
+}
+
+.maps1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    padding-left: 40px;
+    gap: 50px;
+}
+
+/*ID   numeral*/
+
+.cssLista {
+    /*Dentro de pagina Skateshop*/
+    font-family: Verdana;
+    font-size: medium;
+    margin-top: 10px;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    left: 170px;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 0/* truco por el uso de inline-block*/
+}
+
+ul :hover {
+    background-color: #aca59a79;
+    background-size: auto;
+}
+
+li {
+    margin-left: 50px;
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    font-size: 14px
+}
+
+.achicarGap {
+    width: 175px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+    right: 50px;
+    top: 20px;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+.paraTransicionMenu:hover {
+    transition: 1s;
+    font-size: 20px;
+}
+
+P {
+    /* formato todos textos principales */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+}
+
+.imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: center;
+}
+
+.videos {
+    display: grid;
+    grid-template-areas: "video1 shane video3" "nyjah video2 chris";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: auto;
+}
+
+.video1 {
+    left: 25px;
+}
+
+.hvideo1 {
+    grid-area: video1;
+}
+
+.video2 {
+    left: 575px;
+    bottom: 325px;
+}
+
+.hvideo2 {
+    grid-area: video2;
+}
+
+.video3 {
+    left: 1125px;
+    bottom: 650px;
+    grid-area: video3;
+}
+
+.hvideo3 {
+    grid-area: video3;
+}
+
+.nyjah {
+    position: relative;
+    left: 25px;
+    bottom: 2px;
+    background-color: rgb(194, 238, 223);
+    border: solid 1px;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    overflow: hidden;
+    grid-area: nyjah;
+}
+
+.shane {
+    position: relative;
+    left: 25px;
+    bottom: 2px;
+    border: solid 1px;
+    background-color: rgb(194, 238, 223);
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    overflow: hidden;
+    grid-area: shane;
+}
+
+.chris {
+    position: relative;
+    left: 25px;
+    bottom: 2px;
+    border: solid 1px;
+    margin: 0;
+    background-color: rgb(194, 238, 223);
+    padding: 0;
+    width: 500px;
+    overflow: hidden;
+    grid-area: chris;
+}
+
+@media only screen and (max-width: 480px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .texto {
+        font-family: "Ubuntu script=latin rev=2";
+        width: 80%;
+        font-weight: 400;
+        font-style: normal;
+        line-height: initial;
+        font-size: 100%;
+        position: relative;
+        left: 40px;
+    }
+    .Titulos {
+        text-align: center;
+    }
+    .menu {
+        background: none;
+        width: 450px;
+    }
+    .menu li {
+        margin-bottom: 3px;
+        display: block;
+    }
+    .imagenes {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-content: stretch;
+        justify-content: center;
+    }
+    .boredesRedondeados {
+        width: 310px;
+        left: 25px;
+    }
+    .videos {
+        display: grid;
+        grid-template-areas: "video1" "nyjah" "video2" "shane" "video3" "chris";
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        text-align: center;
+    }
+    .video1 {
+        width: 310px;
+    }
+    .video2 {
+        width: 310px;
+    }
+    .video3 {
+        width: 310px;
+    }
+    .nyjah {
+        width: 310px;
+        left: 25px;
+    }
+    .shane {
+        width: 310px;
+        left: 25px;
+    }
+    .chris {
+        width: 310px;
+        left: 25px;
+    }
+
+    h2{
+       text-align: center;
+    }
+    
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    html {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 200;
+        overflow-x: hidden;
+    }
+    .texto {
+        font-family: "Ubuntu script=latin rev=2";
+        width: 80%;
+        font-weight: 400;
+        font-style: normal;
+        line-height: initial;
+        font-size: 100%;
+        position: relative;
+        left: 40px;
+    }
+    .Titulos {
+        text-align: center;
+    }
+    .menu {
+        background: none;
+        width: 450px;
+    }
+    .menu li {
+        margin-bottom: 3px;
+        display: block;
+    }
+    .imagenes {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-content: stretch;
+        justify-content: center;
+        display: none;
+    }
+    .boredesRedondeados {
+        width: 310px;
+        left: 25px;
+    }
+    .videos {
+        display: grid;
+        grid-template-areas: "video1" "nyjah" "video2" "shane" "video3" "chris";
+        grid-template-rows: 1px;
+        grid-template-columns: auto;
+        grid-gap: 20px;
+    }
+    .video1 {
+        width: 350px;
+    }
+    .video2 {
+        width: 350px;
+    }
+    .video3 {
+        width: 350px;
+    }
+    .nyjah {
+        width: 370px;
+        left: 370px;
+        bottom: 25px;
+    }
+    .shane {
+        width: 370px;
+        left: 25px;
+        left: 370px;
+        bottom: 350px;
+    }
+    .chris {
+        width: 370px;
+        left: 25px;
+        left: 370px;
+        bottom: 330px;
+    }
+}

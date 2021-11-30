@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta hrrp-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="keywords" content="skate,skateboading,spots,skateparks,skatepark">
+	<title>Skateboarding Web</title>
+	<meta name="description" content="Una pagina para los fanaticos del skate, para encontrar tus lugares para andar">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Quicksand:wght@300&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="estilo.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body class="degradado">
+	
+	<header>
+		<nav class="menu">
+			<ul>
+				<li class="achicarGap paraTransicionMenu"><a href="index.html">Inicio</a></li>
+				<li class="achicarGap paraTransicionMenu"><a href="skate.html">Skate History</a></li>
+				<li class="achicarGap paraTransicionMenu"><a href="galeria.html">Galeria</a>
+					<ul>
+						<li><a href="" class="paraTransicionMenu">Fotos</a></li>
+						<li><a href="" class="paraTransicionMenu">Videos</a></li>
+					</ul>
+				</li>
+				<li class="achicarGap paraTransicionMenu"><a href="skateShops.html">SkateShops</a></li>
+				<li class="achicarGap paraTransicionMenu"><a href="contacto.html">Contacto</a></li>
+				<li><div class="">
+					<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+						<form class="form-inline" action="/action_page.php">
+							<input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+						</form>
+					</nav>
+				</div></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<br>
+		<a href="index.html" style="text-decoration: none;">
+			<h1>SkateLab</h1>
+		</a>
+		<section>
+			<div id="accordion" class="container">
+				<div class="card">
+					<div class="card-header">
+						<a class="card-link" data-toggle="collapse" href="#collapseOne">
+							Contacto Desarrollador
+						</a>
+					</div>
+					<div id="collapseOne" class="collapse show" data-parent="#accordion">
+						<div class="card-body">
+							<ul>
+								<li>Julian Obetko</li>
+								<li>Mail: julian_obetko@hotmail.com</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+							Tecnologias usadas para el proyecto
+						</a>
+					</div>
+					<div id="collapseTwo" class="collapse" data-parent="#accordion">
+						<div class="card-body">
+							Esta pagina fue desarrollada a travez de HTML, CSS con Bootstrap </div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+							Formulario para que te Contactemos
+						</a>
+					</div>
+					<div id="collapseThree" class="collapse" data-parent="#accordion">
+						<div class="card-body">
+							Tu nombre:<br />
+							<input type="text" name="nombre" size="20"><br />
+							Tu Email:<br />
+							<input type="text" name="email" size="20"><br />
+							Tu mensaje:<br />
+							<input type="text" name="mensaje" size="100"><br />
+							<input type="submit" value="Enviar"></form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+	</main>
+	<footer>
+		&copy;2021 - desarollado por <a href="#">Julian Obetko</a>
+	</footer>
+</body>
+
+</html>
